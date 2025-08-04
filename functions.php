@@ -9,11 +9,14 @@ function password_generator($length = 0){
     if (isset($_GET["uppercase"]) && $_GET["uppercase"] == "on"){
         $allChars.=$uppercaseAlphabet;
     }
-     if (isset($_GET["lowercase"]) && $_GET["lowercase"] == "on"){
+     
+    if (isset($_GET["lowercase"]) && $_GET["lowercase"] == "on"){
         $allChars.=$lowercaseAlphabet;
-    } if (isset($_GET["numbers"]) && $_GET["numbers"] == "on"){
+    } 
+    if (isset($_GET["numbers"]) && $_GET["numbers"] == "on"){
         $allChars.=$numbers;
-    } if (isset($_GET["symbols"]) && $_GET["symbols"] == "on"){
+    } 
+    if (isset($_GET["symbols"]) && $_GET["symbols"] == "on"){
         $allChars.=$symbols;
     }
 
